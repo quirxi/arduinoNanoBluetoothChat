@@ -106,9 +106,9 @@ String msg;
 void setup()
 {
   Serial.begin(9600);
-  Serial.println("Hello seriell monitor!");
+  Serial.println("Hello serial monitor!");
   btSerial.begin(9600);
-  btSerial.println("Hello seriell bluetooth device!");
+  btSerial.println("Hello serial bluetooth device!");
   //  btSerial.println("AT+HELP");
   //  btSerial.println("AT+TYPE0");  // no pin/pairing/bonding needed
   //  btSerial.println("AT+RESET");  // would AT commands work here ?
