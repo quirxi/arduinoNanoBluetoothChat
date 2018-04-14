@@ -6,11 +6,15 @@ Serial chat between arduino nano and mobile phone using CC2541BLE bluetooth boar
 
 ## Hardware
 ---
-I bought a Bluetooth 4.0 BLE module on [*www.aliexpress.com*](https://www.aliexpress.com/item/Android-IOS-BLE-Bluetooth-4-0-HM-10-CC2540-CC2541-6Pin-Serial-Wireless-Module-DC-5V/32837215626.html) and realized that it was not an original HM-10 module but a clone with a CC2541 chip on it.
+I bought a Bluetooth 4.0 BLE module on [*www.aliexpress.com*](https://www.aliexpress.com/item/Android-IOS-BLE-Bluetooth-4-0-HM-10-CC2540-CC2541-6Pin-Serial-Wireless-Module-DC-5V/32837215626.html) and realized that it was not an original HM-10 module but a clone called BLE CC41-A bluetooth module based on the TI CC2541 chip.
 But that did not really matter to me at that time because I had no clue what the difference was anyway.
 These clones have a sort of slightly different/limited AT command set. 
-You can find the datasheet of the original chip [*here*](http://duinopeak.com/wiki/images/c/cd/Bluetooth4_en.pdf) and a datasheet of the clone [*here*](http://img.banggood.com/file/products/20150104013200BLE-CC41-A_AT%20Command.pdf).
-I have also added these datasheets to this github repository.
+You can find the documentation of these devices here:
+* [Datasheet of the original HM-10 module](http://duinopeak.com/wiki/images/c/cd/Bluetooth4_en.pdf)
+* [CC41-A bluetooth module specification](https://img.banggood.com/file/products/20150104013145BLE-CC41-A%20Spefication.pdf)
+* [AT-Command subset of the CC41-A bluetooth module](http://img.banggood.com/file/products/20150104013200BLE-CC41-A_AT%20Command.pdf).
+* [Datasheet of the TI CC2541 ble bluetooth chip](http://www.ti.com/lit/ds/symlink/cc2541.pdf)<br>
+I have also added these documents to this github repository.
 
 ![CC2541 Frontside](CC2541_front.jpg) ![CC2541 Backside](CC2541_back.jpg)
 
@@ -28,6 +32,7 @@ I have also added these datasheets to this github repository.
 
 
 The *STATE* pin of the bluetooth module is connected to a LED, which indicates clearly when a mobile phone is connected.
+The *EN* pin could be used to disconnect devices by pulling it to low.
 
 **One word about voltage levels of the bluetooth module:**<br>
 Even when you can supply the module with 3.6 to 6 volt the voltage *output level* of the module is *3.3* volt.
