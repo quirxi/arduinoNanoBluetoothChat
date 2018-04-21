@@ -6,6 +6,8 @@ Serial chat between arduino nano and mobile phone using CC2541BLE bluetooth boar
 
 ## Hardware
 ---
+#### BLE CC41-A Bluetooth Module
+
 I bought a Bluetooth 4.0 BLE module on [*www.aliexpress.com*](https://www.aliexpress.com/item/Android-IOS-BLE-Bluetooth-4-0-HM-10-CC2540-CC2541-6Pin-Serial-Wireless-Module-DC-5V/32837215626.html) and realized that it was not an original HM-10 module but a clone called BLE CC41-A bluetooth module based on the TI CC2541 chip.
 But that did not really matter to me at that time because I had no clue what the difference was anyway.
 These clones have a sort of slightly different/limited AT command set. 
@@ -45,7 +47,7 @@ So I hooked up an external stabilized power supply on pin 27 of the nano and VCC
 I think it would probably the best to power the arduino and the bluetooth module both with stablized 3.3 volt from an external power supply.
 Also keep in mind that the output of the bluetooth module is 3.3 volt when you calculate the resistor for the status LED.
 
-### Arduino Nano
+#### Arduino Nano
 I bought a cheap chinese clone of the arduino nano on [*aliexpress*](https://www.aliexpress.com/item/1PCS-MINI-USB-Nano-V3-0-ATmega328P-CH340G-5V-16M-Micro-controller-board-for-arduino-NANO/32848298184.html) and encased it in a 3D printed housing from [*thingiverse*](https://www.thingiverse.com/thing:959057).
 
 
